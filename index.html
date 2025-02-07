@@ -3,44 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checklist Feature</title>
+  <title>GDPR Compliance Survey</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="accordion">
-    <!-- Accordion Item 1 -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        Checklist Item 1
-        <span class="icon">&#9660;</span>
+  <div class="container">
+    <h1>GDPR Compliance Survey</h1>
+    <form id="surveyForm">
+      
+      <!-- Section 1: Lawful Basis and Transparency -->
+      <div class="section">
+        <h2>Section 1: Lawful Basis and Transparency</h2>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          a. Conduct an information audit to determine what information you process and who has access to it.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          b. Have a legal justification for your data processing activities.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          c. Provide clear information about your data processing and legal justification in your privacy policy.
+        </label>
       </div>
-      <div class="accordion-content">
-        <p>Details about Checklist Item 1. This section can include text, links, or any other information that expands upon the item.</p>
-      </div>
-    </div>
 
-    <!-- Accordion Item 2 -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        Checklist Item 2
-        <span class="icon">&#9660;</span>
+      <!-- Section 2: Data Security -->
+      <div class="section">
+        <h2>Section 2: Data Security</h2>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          a. Take data protection into account at all times, from the moment you begin developing a product to each time you process data.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          b. Encrypt, pseudonymize, or anonymize personal data wherever possible.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          c. Create an internal security policy for your team members, and build awareness about data protection.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          d. Know when to conduct a data protection impact assessment, and have a process in place to carry it out.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          e. Have a process in place to notify the authorities and your data subjects in the event of a data breach.
+        </label>
       </div>
-      <div class="accordion-content">
-        <p>Details about Checklist Item 2. This section can also include more detailed explanations or additional steps.</p>
-      </div>
-    </div>
 
-    <!-- Accordion Item 3 -->
-    <div class="accordion-item">
-      <div class="accordion-header">
-        Checklist Item 3
-        <span class="icon">&#9660;</span>
+      <!-- Section 3: Accountability and Governance -->
+      <div class="section">
+        <h2>Section 3: Accountability and Governance</h2>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          a. Designate someone responsible for ensuring GDPR compliance across your organization.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          b. Sign a data processing agreement between your organization and any third parties that process personal data on your behalf.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          c. If your organization is outside the EU, appoint a representative within one of the EU member states.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          d. Appoint a Data Protection Officer (if necessary).
+        </label>
       </div>
-      <div class="accordion-content">
-        <p>Details about Checklist Item 3. You can continue adding more checklist items as needed.</p>
+
+      <!-- Section 4: Privacy Rights -->
+      <div class="section">
+        <h2>Section 4: Privacy Rights</h2>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          a. It's easy for your customers to request and receive all the information you have about them.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          b. It's easy for your customers to correct or update inaccurate or incomplete information.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          c. It's easy for your customers to request to have their personal data deleted.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          d. It's easy for your customers to ask you to stop processing their data.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          e. It's easy for your customers to receive a copy of their personal data in a format that can be easily transferred to another company.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          f. It's easy for your customers to object to you processing their data.
+        </label>
+        <label>
+          <input type="checkbox" class="survey-checkbox">
+          g. If you make decisions about people based on automated processes, you have a procedure to protect their rights.
+        </label>
       </div>
-    </div>
+
+      <!-- Success Message -->
+      <div id="successMessage" class="success hidden">
+        🎉 Success! You have completed the survey.
+      </div>
+
+    </form>
   </div>
 
   <script src="script.js"></script>
